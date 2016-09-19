@@ -5,22 +5,22 @@
   
   <title>莫队算法整理 | Hodorable&#39;s Eden</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##写在前面如果问莫队算法是什么，去翻翻下面两个知乎链接传说中能解决一切区间处理问题的莫队算法是什么？有哪些算法或数据结构是ACM大牛们在比赛中创造出来的？
+  <meta name="description" content="写在前面如果问莫队算法是什么，去翻翻下面两个知乎链接传说中能解决一切区间处理问题的莫队算法是什么？有哪些算法或数据结构是ACM大牛们在比赛中创造出来的？
 学习莫队的最好资料莫过于14年的集训队论文：《浅谈分块思想在一类数据处理问题中的应用》
-线性序列上的莫队比较典型的入门题是： [2009国家集训队]小Z的袜子(hose)写的比较好的题解是这里这里推荐刷的另外一道题：Mato的文件管理 一道之">
+线性序列上的莫队比较典型的入门题是： [2009国家集训队]小Z的袜子(hose)写的比较好的题解是这里这里推荐刷的另外一道题：Mato的文件管理 一道之前用">
 <meta property="og:type" content="article">
 <meta property="og:title" content="莫队算法整理">
 <meta property="og:url" content="http://hodorable.github.io/2016/09/20/莫队算法整理/index.html">
 <meta property="og:site_name" content="Hodorable's Eden">
-<meta property="og:description" content="##写在前面如果问莫队算法是什么，去翻翻下面两个知乎链接传说中能解决一切区间处理问题的莫队算法是什么？有哪些算法或数据结构是ACM大牛们在比赛中创造出来的？
+<meta property="og:description" content="写在前面如果问莫队算法是什么，去翻翻下面两个知乎链接传说中能解决一切区间处理问题的莫队算法是什么？有哪些算法或数据结构是ACM大牛们在比赛中创造出来的？
 学习莫队的最好资料莫过于14年的集训队论文：《浅谈分块思想在一类数据处理问题中的应用》
-线性序列上的莫队比较典型的入门题是： [2009国家集训队]小Z的袜子(hose)写的比较好的题解是这里这里推荐刷的另外一道题：Mato的文件管理 一道之">
-<meta property="og:updated_time" content="2016-09-19T17:17:40.590Z">
+线性序列上的莫队比较典型的入门题是： [2009国家集训队]小Z的袜子(hose)写的比较好的题解是这里这里推荐刷的另外一道题：Mato的文件管理 一道之前用">
+<meta property="og:updated_time" content="2016-09-19T17:20:26.610Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="莫队算法整理">
-<meta name="twitter:description" content="##写在前面如果问莫队算法是什么，去翻翻下面两个知乎链接传说中能解决一切区间处理问题的莫队算法是什么？有哪些算法或数据结构是ACM大牛们在比赛中创造出来的？
+<meta name="twitter:description" content="写在前面如果问莫队算法是什么，去翻翻下面两个知乎链接传说中能解决一切区间处理问题的莫队算法是什么？有哪些算法或数据结构是ACM大牛们在比赛中创造出来的？
 学习莫队的最好资料莫过于14年的集训队论文：《浅谈分块思想在一类数据处理问题中的应用》
-线性序列上的莫队比较典型的入门题是： [2009国家集训队]小Z的袜子(hose)写的比较好的题解是这里这里推荐刷的另外一道题：Mato的文件管理 一道之">
+线性序列上的莫队比较典型的入门题是： [2009国家集训队]小Z的袜子(hose)写的比较好的题解是这里这里推荐刷的另外一道题：Mato的文件管理 一道之前用">
   
     <link rel="alternate" href="/atom.xml" title="Hodorable&#39;s Eden" type="application/atom+xml">
   
@@ -95,11 +95,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##写在前面<br>如果问莫队算法是什么，去翻翻下面两个知乎链接<br><a href="https://www.zhihu.com/question/27316467/answer/36260465" target="_blank" rel="external">传说中能解决一切区间处理问题的莫队算法是什么？</a><br><a href="https://www.zhihu.com/question/26547156" target="_blank" rel="external">有哪些算法或数据结构是ACM大牛们在比赛中创造出来的？</a></p>
+        <h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>如果问莫队算法是什么，去翻翻下面两个知乎链接<br><a href="https://www.zhihu.com/question/27316467/answer/36260465" target="_blank" rel="external">传说中能解决一切区间处理问题的莫队算法是什么？</a><br><a href="https://www.zhihu.com/question/26547156" target="_blank" rel="external">有哪些算法或数据结构是ACM大牛们在比赛中创造出来的？</a></p>
 <p>学习莫队的最好资料莫过于14年的集训队论文：<br><a href="http://www.tsinsen.com/resources/Thesis2013_ljq.pdf" target="_blank" rel="external">《浅谈分块思想在一类数据处理问题中的应用》</a></p>
 <h2 id="线性序列上的莫队"><a href="#线性序列上的莫队" class="headerlink" title="线性序列上的莫队"></a>线性序列上的莫队</h2><p>比较典型的入门题是： <a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2038" target="_blank" rel="external">[2009国家集训队]小Z的袜子(hose)</a><br>写的比较好的题解是<a href="http://hzwer.com/2782.html" target="_blank" rel="external">这里</a><br>这里推荐刷的另外一道题：<a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3289" target="_blank" rel="external">Mato的文件管理</a> 一道之前用主席树做的题，可以用莫队+线段树或树状数组强行水过去，做完这道题应该就能体会到莫队是个适用性很强的算法了。<br>在线性数组上的莫队算法就总结到这里，做法都差不多的。</p>
-<p>##树上莫队<br>想学爬树，先学分块。<br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1086" target="_blank" rel="external">[SCOI2005]王室联邦</a> 是一道分块的经典入门题。题解可以去翻<a href="http://blog.csdn.net/regina8023/article/details/43225213" target="_blank" rel="external">这里</a>。<br>学习分块完毕后，应该思路就清楚了，树上莫队其实就是分块的时候稍微复杂了一些。树上分块的方法其实有蛮多。王室联邦的分块方法是一种，另一种比较常见的思路就是利用dfs序分块，有点树转数组的味道。<br><a href="http://www.spoj.com/problems/QTREE2/" target="_blank" rel="external">QTREE2 - Query on a tree II</a> 是树上莫队的经典应用，可以作为树上莫队的第一道题去刷。dsy上有一道题干相同的题目，但是是要求在线的算法。。暴力自重了呀。。<br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3757" target="_blank" rel="external">苹果树</a> 是一道类似的题目，可惜不能再提交了。<br>树上莫队算法也是大同小异的，刷到理解透彻之后就可以存成模版了。</p>
-<p>##带修改操作的莫队<br>貌似开始比较难了。。。<br>其实也不算难，莫队算法在牺牲了一点点复杂度的的情况下还是攻克了修改问题的。思路就是又加了一个分块的维度——时间戳。两次修改操作之间的查询操作可以看作是在同一个time zone里。由于分块时多了时间戳，所以在块内和块间的转移也需要考虑时间转移的复杂度。相应的，分块的大小也变化了，至于为何将块的大小分为$n^{3/2}$最优？考虑下整体的复杂度就应该清楚了。<br><a href="http://uoj.ac/problem/58" target="_blank" rel="external">【WC2013】糖果公园</a> 是一个比较经典的树上莫队带修改的题目，这里推荐拿<a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2120" target="_blank" rel="external">数颜色</a>作为带修改的莫队更合适些。<br>另外一道偏简单的一道树上莫队带修改题是<a href="http://www.lydsy.com/JudgeOnline/problem.php?id=4129" target="_blank" rel="external">Haruna’s Breakfast</a> 。<br>最后贴一个莫队整理博文:<a href="http://blog.csdn.net/mlzmlz95/article/details/43644653" target="_blank" rel="external">莫队算法小结</a>，写的很详细，里面也涉及了带修改操作分块的时间复杂度分析。<br>如果把上面做的差不多，那是时候整理模版了。<a href="https://github.com/Hodorable/algorithm-modui" target="_blank" rel="external">这里</a>是部分题目的参考代码</p>
+<h2 id="树上莫队"><a href="#树上莫队" class="headerlink" title="树上莫队"></a>树上莫队</h2><p>想学爬树，先学分块。<br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=1086" target="_blank" rel="external">[SCOI2005]王室联邦</a> 是一道分块的经典入门题。题解可以去翻<a href="http://blog.csdn.net/regina8023/article/details/43225213" target="_blank" rel="external">这里</a>。<br>学习分块完毕后，应该思路就清楚了，树上莫队其实就是分块的时候稍微复杂了一些。树上分块的方法其实有蛮多。王室联邦的分块方法是一种，另一种比较常见的思路就是利用dfs序分块，有点树转数组的味道。<br><a href="http://www.spoj.com/problems/QTREE2/" target="_blank" rel="external">QTREE2 - Query on a tree II</a> 是树上莫队的经典应用，可以作为树上莫队的第一道题去刷。dsy上有一道题干相同的题目，但是是要求在线的算法。。暴力自重了呀。。<br><a href="http://www.lydsy.com/JudgeOnline/problem.php?id=3757" target="_blank" rel="external">苹果树</a> 是一道类似的题目，可惜不能再提交了。<br>树上莫队算法也是大同小异的，刷到理解透彻之后就可以存成模版了。</p>
+<h2 id="带修改操作的莫队"><a href="#带修改操作的莫队" class="headerlink" title="带修改操作的莫队"></a>带修改操作的莫队</h2><p>貌似开始比较难了。。。<br>其实也不算难，莫队算法在牺牲了一点点复杂度的的情况下还是攻克了修改问题的。思路就是又加了一个分块的维度——时间戳。两次修改操作之间的查询操作可以看作是在同一个time zone里。由于分块时多了时间戳，所以在块内和块间的转移也需要考虑时间转移的复杂度。相应的，分块的大小也变化了，至于为何将块的大小分为$n^{3/2}$最优？考虑下整体的复杂度就应该清楚了。<br><a href="http://uoj.ac/problem/58" target="_blank" rel="external">【WC2013】糖果公园</a> 是一个比较经典的树上莫队带修改的题目，这里推荐拿<a href="http://www.lydsy.com/JudgeOnline/problem.php?id=2120" target="_blank" rel="external">数颜色</a>作为带修改的莫队更合适些。<br>另外一道偏简单的一道树上莫队带修改题是<a href="http://www.lydsy.com/JudgeOnline/problem.php?id=4129" target="_blank" rel="external">Haruna’s Breakfast</a> 。<br>最后贴一个莫队整理博文:<a href="http://blog.csdn.net/mlzmlz95/article/details/43644653" target="_blank" rel="external">莫队算法小结</a>，写的很详细，里面也涉及了带修改操作分块的时间复杂度分析。<br>如果把上面做的差不多，那是时候整理模版了。<a href="https://github.com/Hodorable/algorithm-modui" target="_blank" rel="external">这里</a>是部分题目的参考代码</p>
 <p>##总结<br>莫队的核心思想：离线处理查询，通过调整查询序列的顺序优化查询结构。<br>难度上目前只做到树上莫队带修改，不知道莫队的最终形态会是什么。<br>最后，我只是个大自然搬运工。</p>
 
       
